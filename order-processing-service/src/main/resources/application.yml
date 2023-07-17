@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Order-Processing-Service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: eknl0ofr.
+  data:
+    mongodb:
+      uri: mongodb+srv://emreguney:eknl0ofr.@cluster0.cdeckcd.mongodb.net/?retryWrites=true&w=majority
+      database: ordermanagementsystem
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 8091
+queues:
+  order-track-queue:
+    queue: order.order-track-queue.queue
+    routing: order.order-track-queue.routing
+    exchange: order.order-track-queue.exchange

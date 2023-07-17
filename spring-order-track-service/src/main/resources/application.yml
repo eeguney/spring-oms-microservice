@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Order-Track-Service
+server:
+  port: 8092
+properties:
+  order-service: http://localhost:8080/api/order
+  order-processing-service: http://localhost:8091/api/order-processing
